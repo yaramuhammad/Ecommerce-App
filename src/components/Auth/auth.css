@@ -1,0 +1,63 @@
+.navbar
+{
+  z-index: 99999;
+}
+.form-container {
+    transition: 1s ease-in-out;
+}
+.social-container a{
+    width: 40px;
+    height: 40px;
+}
+
+.form-container input {
+    padding: 10px 20px;
+    margin: 7.5px 0;
+    width: 100%;
+    background: #eee;
+    border: none;
+}
+
+.form-container.signup-container {
+    z-index: 1;
+    opacity: 0;
+}
+.form-container.signin-container {
+    z-index: 2;
+}
+.panel-sign-up {
+    z-index: 100;
+    transition: 1s ease-in-out;
+}
+.panel-sign-in {
+    z-index: 100;
+    opacity: 0;
+    display: flex;
+    pointer-events: none;
+    transform: translateX(100%);
+    transition: 1s ease-in-out;
+}
+
+.f-container.change .signin-container {
+    transform: translateX(100%);
+}
+.f-container.change .signup-container {
+    transform: translateX(100%);
+    z-index: 5;
+    opacity: 1;
+}
+.f-container.change .panel-sign-up {
+    transform: translateX(-100%);
+}
+.f-container.change .panel-sign-in {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
